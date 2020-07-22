@@ -1,0 +1,43 @@
+allprojects {
+  apply plugin: 'java'
+
+  group = 'de.dercoder.inventoryframework'
+  version = '1.0.0-SNAPSHOT'
+
+  sourceCompatibility = 14
+
+  repositories {
+    google()
+    mavenLocal()
+    mavenCentral()
+
+    maven {
+      url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+    }
+    maven {
+      url = "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+  }
+
+  dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
+
+    testImplementation 'org.mockito:mockito-junit-jupiter:latest.release'
+  }
+
+  java {
+    withSourcesJar()
+    withJavadocJar()
+  }
+
+  test {
+    useJUnitPlatform()
+  }
+
+  jar {
+    from {
+      configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+  }
+}

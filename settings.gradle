@@ -1,0 +1,4 @@
+rootProject.name = 'InventoryFramework'
+
+include 'inventoryframework-bukkit'
+

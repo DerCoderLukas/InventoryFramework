@@ -1,0 +1,9 @@
+dependencies {
+  implementation 'com.google.inject:guice:latest.release'
+
+  compile 'com.google.code.gson:gson:latest.release'
+  compile 'com.fasterxml.jackson.core:jackson-databind:latest.release'
+  compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:latest.release'
+
+  implementation 'org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT'
+}

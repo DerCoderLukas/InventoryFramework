@@ -1,0 +1,16 @@
+name: InventoryFramework
+author: DerCoder
+version: 1.0.0
+main: de.dercoder.inventoryframework.InventoryPlugin
+api-version: 1.16.1
+
+commands:
+  inventory:
+    description: Provides the opportunity to open inventories.
+    permission: inventoryframework.command
+    usage: "/inventory <inventoryname>"
+
+permissions:
+  inventoryframework.*:
+    description: "Gives you access to all of the inventory system"
+    default: op

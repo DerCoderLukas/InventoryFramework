@@ -1,0 +1,3 @@
+messages:
+  open-inventory: "Open inventory %s."
+  cant-find-inventory: "Can't find inventory %s."
