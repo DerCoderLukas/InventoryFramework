@@ -23,7 +23,7 @@ allprojects {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:latest.release'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:latest.release'
 
-    testImplementation 'org.mockito:mockito-junit-jupiter:latest.release'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.4.4'
   }
 
   java {
