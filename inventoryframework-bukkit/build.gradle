@@ -3,7 +3,7 @@ dependencies {
 
   compile 'com.google.code.gson:gson:2.8.6'
   compile 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
-  compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1'
+  compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.2'
 
   implementation 'org.spigotmc:spigot-api:1.16.1-R0.1-SNAPSHOT'
 }
