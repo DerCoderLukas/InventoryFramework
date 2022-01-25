@@ -1,5 +1,5 @@
 dependencies {
-  implementation 'com.google.inject:guice:5.0.1'
+  implementation 'com.google.inject:guice:5.1.0'
 
   compile 'com.google.code.gson:gson:2.8.9'
   compile 'com.fasterxml.jackson.core:jackson-databind:2.13.1'
